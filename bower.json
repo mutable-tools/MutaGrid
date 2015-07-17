@@ -1,0 +1,21 @@
+{
+  "name": "MutaGrid",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jorge Epuñan",
+    "url": "https://github.com/juanbrujo",
+    "twitter": "@csslab"
+  },
+  "main": "mutagrid/dist/mutagrid.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "latest"
+  }
+}

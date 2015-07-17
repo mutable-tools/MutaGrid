@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Grid</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../mutagrid/dist/mutagrid.css" />
+<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+
+	<main class="container">
+		<h1>MutaGrid: 12 columns example</h1>
+		<h3>Single Column Example</h3>
+		<div class="row">
+			<div class="column-12">
+				<div class="grid-item">.column-12</div>
+			</div>
+		</div>
+
+		<h3>Column Gutter</h3>
+		<div class="row gutter">
+			<div class="column-12 gutter-right">
+				<div class="grid-item">.gutter-right</div>
+			</div>
+			<div class="column-12 gutter-left">
+				<div class="grid-item">.gutter-left</div>
+			</div>
+			<div class="column-12 no-gutter">
+				<div class="grid-item">.no-gutter</div>
+			</div>
+			<div class="column-12 no-gutter-small no-gutter-xsmall">
+				<div class="grid-item">.no-gutter-small .no-gutter-xsmall</div>
+			</div>
+		</div>
+
+		<h3>Column Offset</h3>
+		<div class="row">
+			<div class="column-3 column-offset-2">
+				<div class="grid-item">.column-3 .column-offset-2</div>
+			</div>
+		</div>
+
+		<h3>Column Center</h3>
+		<div class="row">
+			<div class="column-3 column-center">
+				<div class="grid-item">.column-3 .column-center</div>
+			</div>
+		</div>
+
+		<h3>Column Push</h3>
+		<div class="row">
+			<div class="column-3 column-center column-push-2">
+				<div class="grid-item">.column-3 .column-center .column-push-2</div>
+			</div>
+		</div>
+
+		<h3>Column Pull</h3>
+		<div class="row">
+			<div class="column-3 column-center column-pull-2">
+				<div class="grid-item">.column-3 .column-center .column-pull-2</div>
+			</div>
+		</div>
+
+		<h3>Two Column Example</h3>
+		<div class="row">
+			<div class="column-6">
+				<div class="grid-item">.column-6</div>
+			</div>
+			<div class="column-6">
+				<div class="grid-item">.column-6</div>
+			</div>
+		</div>
+
+		<h3>Nested Columns</h3>
+		<div class="row">
+			<div class="column-12">
+				<div class="grid-item">
+					<div class="row">
+						<div class="column-12">
+							<div class="grid-item">
+								.column-12
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column-6">
+							<div class="grid-item grid-item-nested">.column-6</div>
+						</div>
+						<div class="column-6">
+							<div class="grid-item grid-item-nested">.column-6</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Full Grid</h3>
+		<div>
+
+			<div class="row">
+				<div class="column-12">
+					<div class="grid-item">12</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-11">
+					<div class="grid-item">11</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-10">
+					<div class="grid-item">10</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-9">
+					<div class="grid-item">9</div>
+				</div>
+				<div class="column-3">
+					<div class="grid-item">3</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-8">
+					<div class="grid-item">8</div>
+				</div>
+				<div class="column-4">
+					<div class="grid-item">4</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="column-7">
+					<div class="grid-item">7</div>
+				</div>
+				<div class="column-5">
+					<div class="grid-item">5</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-6">
+					<div class="grid-item">6</div>
+				</div>
+				<div class="column-6">
+					<div class="grid-item">6</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-6">
+					<div class="grid-item">6</div>
+				</div>
+				<div class="column-6">
+					<div class="grid-item">6</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-4">
+					<div class="grid-item">4</div>
+				</div>
+				<div class="column-4">
+					<div class="grid-item">4</div>
+				</div>
+				<div class="column-4">
+					<div class="grid-item">4</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-3">
+					<div class="grid-item">3</div>
+				</div>
+				<div class="column-3">
+					<div class="grid-item">3</div>
+				</div>
+				<div class="column-3">
+					<div class="grid-item">3</div>
+				</div>
+				<div class="column-3">
+					<div class="grid-item">3</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h3>Animated Responsive Grid</h3>
+		<div>
+			<div class="row animated">
+				<div class="column-2 column-large-4">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-8 column-large-4">
+					<div class="grid-item">8</div>
+				</div>
+				<div class="column-2 column-large-4">
+					<div class="grid-item">2</div>
+				</div>
+			</div>
+
+			<div class="row animated">
+				<div class="column-5 column-small-3">
+					<div class="grid-item">5</div>
+				</div>
+				<div class="column-2 column-small-6">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-5 column-small-3">
+					<div class="grid-item">5</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h3>Responsive Breakpoint Column Example</h3>
+		<p><b>total</b>: 12 columns</p>
+		<p><b>xlarge:</b> 12 columns 1 row | <b>large</b>: 6 columns 2 rows | <b>medium</b>: 3 columns 4 rows | <b>small</b>: 4 columns 3 rows | <b>xsmall</b>: 1 column 12 rows</p>
+		<div class="row">
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+		</div>
+
+		<h3>Utility Classes</h3>
+		<div class="container">
+			<table class="utility-classes" width="100%">
+				<tr>
+					<th>Class Name</th>
+					<th>CSS Property</th>
+				</tr>
+				<tr>
+					<td>.-hidden-[xsmall,small,medium,large,xlarge]</td>
+					<td>display: none!important;</td>
+				</tr>
+				<tr>
+					<td>.-visible-[xsmall,small,medium,large,xlarge]</td>
+					<td>display: block!important;</td>
+				</tr>
+				<tr>
+					<td>.-visible-inline-[xsmall,small,medium,large,xlarge]</td>
+					<td>display: inline!important;</td>
+				</tr>
+				<tr>
+					<td>.-visible-inlineblock-[xsmall,small,medium,large,xlarge]</td>
+					<td>display: inline-block!important;</td>
+				</tr>
+			</table>
+			<table class="utility-classes hidden" width="100%">
+				<tr>
+					<th></th>
+					<th>xsmall</th>
+					<th>small</th>
+					<th>medium</th>
+					<th>large</th>
+					<th>xlarge</th>
+				</tr>
+				<tr>
+					<td>.-hidden-xsmall</td>
+					<td><div class="grid-item -hidden-xsmall">hidden</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+				</tr>
+				<tr>
+					<td>.-hidden-small</td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item -hidden-small">hidden</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+				</tr>
+				<tr>
+					<td>.-hidden-medium</td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item -hidden-medium">hidden</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+				</tr>
+				<tr>
+					<td>.-hidden-large</td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item -hidden-large">hidden</div></td>
+					<td><div class="grid-item">visible</div></td>
+				</tr>
+				<tr>
+					<td>.-hidden-xlarge</td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item">visible</div></td>
+					<td><div class="grid-item -hidden-xlarge">hidden</div></td>
+				</tr>
+			</table>
+		</div>
+
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+// =================
+// General Mixins
+// =================
+
+// Clearfix Mixin
+// used in: column.scss
+@mixin clearfix() {
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	*zoom: 1;
+}
+
+// Utility Classes Mixin
+// used in: utility-classes.scss
+
+$mediaqueries: xsmall small medium large xlarge;
+
+@mixin utils($mediaquery) {
+
+	@each $size in $mediaqueries {
+
+		@if $mediaquery == $size {
+
+			.-hidden-#{$size} {
+				display: none;
+			}
+			.-visible-inline-#{$size} {
+				display: inline;
+			}
+			.-visible-inlineblock-#{$size} {
+				display: inline-block;
+			}
+
+		} @else {
+
+			.-visible-#{$size} {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
+// Gutter Mixin
+// used in: gutter.scss
+@mixin gutter($mediaquery) {
+
+	.no-gutter-#{$mediaquery} {
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
+	.gutter-top-#{$mediaquery} {
+		padding-top: $gutter!important;
+	}
+	
+	.gutter-bottom-#{$mediaquery} {
+		padding-bottom: $gutter!important;
+	}
+	
+	.gutter-left-#{$mediaquery} {
+		padding-left: ( $gutter / 2 )!important;
+		padding-right: 0!important;
+	}
+	
+	.gutter-right-#{$mediaquery} {
+		padding-right: ( $gutter / 2 )!important;
+		padding-left: 0!important;
+	}
+
+}
+
+// Column calc function
+// used in: push.scss, pull.scss, offset.scss, column.scss
+@function columnWidth($i) {
+	@return 100% * ( $i / 12 );
+}
+

@@ -1,0 +1,31 @@
+{
+	"name": "MutaGrid",
+	"title": "MutableCSS Responsive Grid",
+	"homepage": "https://github.com/i2btech/MutaGrid",
+	"description": "-",
+	"demo": "-",
+	"keywords": [
+		"css",
+		"grid",
+		"responsive"
+	],
+	"version": "0.0.1",
+	"author": {
+		"name": "Jorge Epuñan",
+		"url": "https://github.com/juanbrujo",
+		"twitter": "@csslab"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/",
+			"copyright": "©2015"
+		}
+	],
+	"bugs": "https://github.com/i2btech/MutaGrid/issues",
+	"docs": "https://github.com/i2btech/MutaGrid#readme",
+	"download": "https://github.com/i2btech/MutaGrid/archive/master.zip",
+	"dependencies": {
+		"normalize.css": "latest"
+	}
+}

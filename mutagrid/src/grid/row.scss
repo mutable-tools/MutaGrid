@@ -1,0 +1,29 @@
+/*
+ * Row
+ */
+ 
+.row {
+	margin-left: -( $gutter / 2 );
+	margin-right: -( $gutter / 2 );
+
+	//Clearfix
+	&:after {
+		display: table;
+		clear: both;
+		margin-left: -( $gutter / 2 );
+		margin-right: -( $gutter / 2 );
+		content: '';
+	}
+
+	&.no-gutter {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.animated {
+
+		> div {
+			transition: all .3s ease-in-out;
+		}
+	}
+}
