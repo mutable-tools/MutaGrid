@@ -21,6 +21,16 @@ module.exports = function(grunt) {
         " *  <%= pkg.licenses[0].copyright %>\n" +
         " */\n"
     },
+    uglify: {
+      options: {
+        mangle: false
+      },
+      target: {
+        files: {
+          'demo/assets/js/lt-ie-9.min.js': ['bower_components/lt-ie-9/lt-ie-9.js']
+        }
+      }
+    },
     cssmin: {
       options: {
         shorthandCompacting: false,
@@ -91,7 +101,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask("init", ["cssmin"]);
+  grunt.registerTask("init", ["uglify","cssmin"]);
   grunt.registerTask("default", ["newer:jade","newer:sass"]);
 
 };

@@ -62,12 +62,9 @@ h3 {
   background: #ECF0F1;
   border: 1px solid #fff;
 }
-	.grid-item.grid-item-nested {
-	}
+	.grid-item.grid-item-nested {}
 
-.gutter {
-
-}
+.gutter {}
 
 .utility-classes {
 	border: 1px solid #ECF0F1;

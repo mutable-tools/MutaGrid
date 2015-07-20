@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "latest"
+    "normalize.css": "latest",
+    "lt-ie-9": "~0.1.0"
   }
 }
