@@ -18,6 +18,7 @@ body {
 		text-align: center;
 		z-index: 9;
 	}
+
 @media (min-width: 1680px) {
 	body:before {
 		content: "xlarge";
@@ -43,13 +44,16 @@ body {
 		content: "xsmall";
 	}
 }
+
 h3 {
 	margin: 2em 0 1em;
 	color: #2980B9;
 }
+
 .row {
 	outline: 1px solid #BDC3C7;
 }
+
 .grid-item {
 	padding: 1em;
   font-size: 1em;
@@ -59,12 +63,12 @@ h3 {
   border: 1px solid #fff;
 }
 	.grid-item.grid-item-nested {
-	  margin-bottom: 0;
-	  outline: 1px solid #fff;
 	}
+
 .gutter {
-	outline: 1px solid #ECF0F1;
+
 }
+
 .utility-classes {
 	border: 1px solid #ECF0F1;
 	margin-bottom: 1em;
@@ -104,3 +108,4 @@ h3 {
 	.utility-classes .grid-item[class*="-hidden-"] {
 		background: #E74C3C;
 	}
+	
