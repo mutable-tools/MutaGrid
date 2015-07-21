@@ -56,25 +56,25 @@ $mediaqueries: xsmall small medium large xlarge;
 // used in: gutter.scss
 @mixin gutter($mediaquery) {
 
-	.no-gutter-#{$mediaquery} {
+	.no-gutter#{$mediaquery} {
 		padding-left: 0!important;
 		padding-right: 0!important;
 	}
 
-	.gutter-top-#{$mediaquery} {
+	.gutter-top#{$mediaquery} {
 		padding-top: $gutter!important;
 	}
 	
-	.gutter-bottom-#{$mediaquery} {
+	.gutter-bottom#{$mediaquery} {
 		padding-bottom: $gutter!important;
 	}
 	
-	.gutter-left-#{$mediaquery} {
+	.gutter-left#{$mediaquery} {
 		padding-left: ( $gutter / 2 )!important;
 		padding-right: 0!important;
 	}
 	
-	.gutter-right-#{$mediaquery} {
+	.gutter-right#{$mediaquery} {
 		padding-right: ( $gutter / 2 )!important;
 		padding-left: 0!important;
 	}
@@ -86,4 +86,6 @@ $mediaqueries: xsmall small medium large xlarge;
 @function columnWidth($i) {
 	@return 100% * ( $i / 12 );
 }
+
+
 

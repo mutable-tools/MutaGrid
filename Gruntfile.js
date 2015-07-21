@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   require('time-grunt')(grunt);
   require('jit-grunt')(grunt, {
-    sprite: 'grunt-spritesmith'
+    usebanner: 'grunt-banner'
   });
 
   grunt.initConfig({
@@ -33,6 +33,7 @@ module.exports = function(grunt) {
     },
     cssmin: {
       options: {
+        keepSpecialComments: 0,
         shorthandCompacting: false,
         roundingPrecision: -1
       },
@@ -43,10 +44,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    usebanner: {
+      taskName: {
+        options: {
+          position: "top",
+          banner: "<%= meta.banner %>",
+          linebreak: true
+        },
+        files: {
+          src: [ 'mutagrid/dist/*.css']
+        }
+      }
+    },
     sass: {
       build: {
         options: {
-          //banner: "<%= meta.banner %>",
           style: "compact"
         },
         files: [{
@@ -93,7 +105,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["mutagrid/src/*.scss"],
-        tasks: ["newer:sass","newer:autoprefixer","cssmin"],
+        tasks: ["newer:sass","newer:autoprefixer","cssmin","usebanner"],
         options: {
           spawn: false
         }

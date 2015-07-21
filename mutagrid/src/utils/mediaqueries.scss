@@ -3,16 +3,10 @@
 // =================
 
 // Screen sizes
-$screen-xsmall: 480px;
-$screen-small: 768px;
-$screen-small-min: $screen-small;
-$screen-medium: 1024px;
-$screen-medium-min: $screen-medium;
-$screen-large: 1280px;
-$screen-large-min: $screen-large;
-$screen-xlarge: 1680px;
-$screen-xlarge-min: $screen-xlarge;
-
+$screen-small-min: 	map-get($breakpoints, small);
+$screen-medium-min: map-get($breakpoints, medium);
+$screen-large-min: 	map-get($breakpoints, large);
+$screen-xlarge-min: map-get($breakpoints, xlarge);
 $screen-xsmall-max: ($screen-small-min - 1);
 $screen-small-max: ($screen-medium-min - 1);
 $screen-medium-max: ($screen-large-min - 1);
@@ -33,7 +27,7 @@ $medium-down: "(max-width: #{$screen-medium-max})";
 $large: "(min-width: #{$screen-large-min}) and (max-width: #{$screen-large-max})";
 $large-up: "(min-width: #{$screen-large-min})";
 $large-down: "(max-width: #{$screen-large-max})";
-$xlarge: "(min-width: #{$screen-xlarge})";
+$xlarge: "(min-width: #{map-get($breakpoints, xlarge)})";
 
 // Retina
 $retina: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)";
