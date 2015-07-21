@@ -1,5 +1,16 @@
+/*
+ *  MutableCSS Responsive Grid - v0.0.1
+ *  -
+ *
+ *  https://github.com/i2btech/MutaGrid
+ *  Demo: -
+ *
+ *  Author: Jorge Epuñan |  @csslab
+ *  License: MIT
+ *  ©2015
+ */
+
 /* == Lib == */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 img, legend { border: 0; }
 
 legend, td, th { padding: 0; }
@@ -75,7 +86,7 @@ fieldset { border: 1px solid silver; margin: 0 2px; padding: .35em .625em .75em;
 table { border-collapse: collapse; border-spacing: 0; }
 
 /* == Base   == */
-/* Body definitions */
+/* General Body definitions */
 html * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -239,15 +250,14 @@ html { -webkit-tap-highlight-color: transparent; }
 /* Gutter */
 .no-gutter { padding-left: 0 !important; padding-right: 0 !important; }
 
-.gutter-top { padding-top: 0.5em !important; }
+.gutter-top { padding-top: 1em !important; }
 
-.gutter-bottom { padding-bottom: 0.5em !important; }
+.gutter-bottom { padding-bottom: 1em !important; }
 
 .gutter-left { padding-left: 0.5em !important; padding-right: 0 !important; }
 
 .gutter-right { padding-right: 0.5em !important; padding-left: 0 !important; }
 
-/* AQUI */
 @media (min-width: 1680px) { .no-gutter-xlarge { padding-left: 0 !important; padding-right: 0 !important; }
   .gutter-top-xlarge { padding-top: 1em !important; }
   .gutter-bottom-xlarge { padding-bottom: 1em !important; }
@@ -277,7 +287,7 @@ html { -webkit-tap-highlight-color: transparent; }
 .row { margin-left: -0.5em; margin-right: -0.5em; }
 .row:after { display: table; clear: both; margin-left: -0.5em; margin-right: -0.5em; content: ''; }
 .row.no-gutter { margin-left: 0; margin-right: 0; }
-.row.animated > div { transition: all .3s ease-in-out; }
+.row.animated > div { transition: width 0.3s ease-in-out; }
 
 /* Column Offset Classes */
 .column-offset-1 { margin-left: 8.33333%; }
