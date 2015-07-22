@@ -1,37 +1,40 @@
 /*
  * Gutter
  */
+ 
+@if $gutter != 0 {
 
-@include gutter("");
+	@include gutter("");
 
 
-@media #{$xlarge} {
+	@media #{$xlarge} {
 
-	@include gutter("-xlarge");
+		@include gutter("-xlarge");
+
+	}
+
+	@media #{$large} {
+
+		@include gutter("-large");
+		
+	}
+
+	@media #{$medium} {
+
+		@include gutter("-medium");
+		
+	}
+
+	@media #{$small} {
+
+		@include gutter("-small");
+		
+	}
+
+	@media #{$xsmall} {
+		
+		@include gutter("-xsmall");
+		
+	}
 
 }
-
-@media #{$large} {
-
-	@include gutter("-large");
-	
-}
-
-@media #{$medium} {
-
-	@include gutter("-medium");
-	
-}
-
-@media #{$small} {
-
-	@include gutter("-small");
-	
-}
-
-@media #{$xsmall} {
-	
-	@include gutter("-xsmall");
-	
-}
-

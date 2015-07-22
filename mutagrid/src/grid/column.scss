@@ -6,8 +6,11 @@
 	float: left;
 	position: relative;
 	min-height: 1px;
-	padding-left: ( $gutter / 2);
-	padding-right: ( $gutter / 2 );
+
+	@if $gutter != 0 {
+		padding-left: ( $gutter / 2);
+		padding-right: ( $gutter / 2 );
+	}
 
 	&.column-center {
 		float: none;

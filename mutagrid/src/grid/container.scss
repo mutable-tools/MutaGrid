@@ -21,32 +21,42 @@ $container-gutter-xsmall: $container-gutter;
 	@include clearfix();
 
 	@media #{$xlarge} {
-		padding-left: $container-gutter-xlarge;
-		padding-right: $container-gutter-xlarge;
+		@if $gutter != 0 {
+			padding-left: $container-gutter-xlarge;
+			padding-right: $container-gutter-xlarge;
+		}
 		max-width: map-get($containers, xlarge);
 	}
 
 	@media #{$large} {
-		padding-left: $container-gutter-large;
-		padding-right: $container-gutter-large;
+		@if $gutter != 0 {
+			padding-left: $container-gutter-large;
+			padding-right: $container-gutter-large;
+		}
 		max-width: map-get($containers, large);
 	}
 
 	@media #{$medium} {
-		padding-left: $container-gutter-medium;
-		padding-right: $container-gutter-medium;
+		@if $gutter != 0 {
+			padding-left: $container-gutter-medium;
+			padding-right: $container-gutter-medium;
+		}
 		max-width: map-get($containers, medium);
 	}
 	
 	@media #{$small} {
-		padding-left: $container-gutter-small;
-		padding-right: $container-gutter-small;
+		@if $gutter != 0 {
+			padding-left: $container-gutter-small;
+			padding-right: $container-gutter-small;
+		}
 		max-width: map-get($containers, small);
 	}
 
 	@media #{$xsmall} {
-		padding-left: $container-gutter-xsmall;
-		padding-right: $container-gutter-xsmall;
+		@if $gutter != 0 {
+			padding-left: $container-gutter-xsmall;
+			padding-right: $container-gutter-xsmall;
+		}
 		max-width: map-get($containers, xsmall);
 	}
 }

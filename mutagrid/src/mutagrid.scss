@@ -3,30 +3,30 @@
 // =================
 
 // Grid Columns
-$grid-columns: 12;
+$grid-columns: 	12;
 
 // Gutter Size
-$gutter: 1em;
+$gutter: 		30px;
 
 // CSS Transition speed
-$transition: .3s;
+$transition: 	.3s;
 
 // Breakpoint Sizes
 $breakpoints: (
-	xsmall: 480px,
-	small: 768px,
-	medium: 1024px,
-	large: 1280px,
-	xlarge: 1680px
+	xsmall: 	480px,
+	small: 		768px,
+	medium: 	1024px,
+	large: 		1280px,
+	xlarge: 	1680px
 );
 
 // Container Sizes
 $containers: (
-	xsmall: 100%,
-	small: 100%,
-	medium: map-get($breakpoints, medium),
-	large: map-get($breakpoints, large),
-	xlarge: map-get($breakpoints, xlarge)
+	xsmall: 	100%,
+	small: 		100%,
+	medium: 	map-get($breakpoints, medium),
+	large: 		map-get($breakpoints, large),
+	xlarge: 	map-get($breakpoints, xlarge)
 );
 
 
@@ -35,12 +35,12 @@ $containers: (
 // =================
 
 /* ==
- * Lib
+ * Lib: Normalize
  == */
 @import 'lib/normalize.scss';
 
 /* ==
- * Base  
+ * Base Styles
  == */
 @import 'base/body.scss';
 

@@ -96,8 +96,7 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: true,
-        spawn: false
+        livereload: true
       },
       jade: {
         files: "mutagrid/src/**/*.jade",
@@ -105,10 +104,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["mutagrid/src/*.scss"],
-        tasks: ["newer:sass","newer:autoprefixer","cssmin","usebanner"],
-        options: {
-          spawn: false
-        }
+        tasks: ["newer:sass","newer:autoprefixer","cssmin","usebanner"]
       }
     }
   });
