@@ -110,6 +110,6 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("init", ["uglify","cssmin"]);
-  grunt.registerTask("default", ["newer:jade","newer:sass"]);
+  grunt.registerTask("default", ["newer:jade","newer:sass","watch"]);
 
 };

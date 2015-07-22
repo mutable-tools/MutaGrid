@@ -2,44 +2,47 @@
 // Utility Classes
 // =================
 
-.-hidden {
-	display: none!important;
-}
-.-invisible {
-  visibility: hidden;
-}
-.-visible {
-	display: block!important;
-}
-.-visible-inline {
-	display: inline!important;
-}
-.-visible-inlineblock {
-	display: inline-block!important;
-}
+@if $utility-classes == true {
 
-// xlarge
-@media #{$xlarge} {
-	@include utils("xlarge");
-}
+	.-hidden {
+		display: none!important;
+	}
+	.-invisible {
+	  visibility: hidden;
+	}
+	.-visible {
+		display: block!important;
+	}
+	.-visible-inline {
+		display: inline!important;
+	}
+	.-visible-inlineblock {
+		display: inline-block!important;
+	}
 
-// large
-@media #{$large} {
-	@include utils("large");
-}
+	// xlarge
+	@media #{$xlarge} {
+		@include utils("xlarge");
+	}
 
-// medium
-@media #{$medium} {
-	@include utils("medium");
-}
+	// large
+	@media #{$large} {
+		@include utils("large");
+	}
 
-// small
-@media #{$small} {
-	@include utils("small");
-}
+	// medium
+	@media #{$medium} {
+		@include utils("medium");
+	}
 
-// xsmall
-@media #{$xsmall} {
-	@include utils("xsmall");
-}
+	// small
+	@media #{$small} {
+		@include utils("small");
+	}
 
+	// xsmall
+	@media #{$xsmall} {
+		@include utils("xsmall");
+	}
+
+}

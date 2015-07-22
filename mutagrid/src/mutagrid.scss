@@ -1,15 +1,12 @@
 // =================
-// Essential config variables, edit if needed
+// Initial config variables, edit if needed
 // =================
 
 // Grid Columns
 $grid-columns: 	12;
 
 // Gutter Size
-$gutter: 		30px;
-
-// CSS Transition speed
-$transition: 	.3s;
+$gutter: 				1em;
 
 // Breakpoint Sizes
 $breakpoints: (
@@ -29,36 +26,58 @@ $containers: (
 	xlarge: 	map-get($breakpoints, xlarge)
 );
 
+// CSS Transition speed
+$transition: 				.3s;
+
+// Include normalize.css by default?
+// (recommended for crossbrowsing support)
+// value: bool - true | false 
+//$normalize: 				false;
+
+// Include auxiliar-classes by default?
+// value: bool - true | false
+// (recommended: true)
+$auxiliar-classes: 	true;
+
+// Include utility-classes by default?
+// value: bool - true | false
+$utility-classes: 	true;
+
 
 // =================
 // Essential scss files imported and processed.
+// (better don't touch anything below this, or the universe may explode)
 // =================
 
 /* ==
  * Lib: Normalize
  == */
-@import 'lib/normalize.scss';
+//@import 'lib/normalize';
 
 /* ==
  * Base Styles
  == */
-@import 'base/body.scss';
+@import 'base/body';
 
 /* ==
- * Utils 
+ * Utility Classes
  == */
-@import 'utils/mixins.scss';
-@import 'utils/mediaqueries.scss';
-@import 'utils/utility-classes.scss';
+@import 'utils/mixins',
+				'utils/mediaqueries',
+				'utils/utility-classes';
 
 /* ==
  * Grid 
  == */
-@import 'grid/container.scss';
-@import 'grid/column.scss';
-@import 'grid/gutter.scss';
-@import 'grid/row.scss';
-@import 'grid/offset.scss';
-@import 'grid/push.scss';
-@import 'grid/pull.scss';
+@import 'grid/container',
+				'grid/column',
+				'grid/gutter',
+				'grid/row';
+
+/* ==
+ * Auxiliar Classes 
+ == */
+@import 'aux/offset',
+				'aux/push',
+				'aux/pull';
 
