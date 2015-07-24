@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>MutaGrid Demo Template: Dashboard</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="mutagrid/dist/12/mutagrid.css" />
+  <link rel="stylesheet" href="assets/css/demo.css">
+  <style>
+  body {
+    padding: 0;
+  }
+  a {
+    color: #2980B9;
+  }
+  .row {
+    outline: 0;
+  }
+  .navbar {
+    background: #333;
+    color: #eee;
+  }
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .navbar .menu,
+  .navbar form {
+    float: right;
+  }
+  .navbar form {
+    padding: 1em 0;
+  }
+  .navbar .form-search {
+    border-radius: 5px;
+    border: 0;
+    padding: .2em .5em;
+    color: #666;
+    font-size: .9em;
+  }
+  .navbar-brand {
+    display: inline-block;
+    padding: 1em;
+  }
+  .navbar .menu > li {
+    list-style: none;
+    display: inline-block;
+    margin-right: .5em;
+    padding-right: .5em;
+  }
+  .navbar a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #eee;
+  }
+  .navbar a:hover {
+    color: white;
+  }
+  .hamburguer {
+    float: right;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 3.5em;
+    line-height: .7;
+    color: white;
+  }
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+  }
+  .sidebar .nav-sidebar {
+    list-style: none;
+    padding: 0;
+    margin-right: -1em;
+    margin-bottom: 1em;
+    margin-left: -1em;
+  }
+  .sidebar .nav-sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+    font-size: .9em;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+  }
+  .sidebar .nav-sidebar a:hover {
+    background: #2980B9;
+    color: white;
+    padding-left: 1.5em;
+  }
+  .main {
+    padding: 50px 1em 1em;
+  }
+  .main h1,
+  .main h2 {
+    border-bottom: 1px solid #ccc;
+  }
+  .main h1 {
+    font-size: 2em;
+  }
+  .main h2 {
+    font-size: 1.6em;
+  }
+  .graphics > div > div {
+    text-align: center;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 1em;
+  }
+  </style>
+</head>
+<body>
+
+    <div class="navbar fixed-top">
+      <div class="row">
+        <div class="column-3">
+          <a class="navbar-brand" href="#">MutaGrid Dashboard</a>
+          <span class="hamburguer -visible-xsmall">
+            &equiv;
+          </span>
+        </div>
+        <nav class="column-9 -hidden-xsmall">
+          <ul class="menu">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-search" placeholder="Search...">
+          </form>
+        </nav>
+      </div>
+    </div>
+
+    <main class="row no-gutter">
+        <div class="column-2 column-small-3 sidebar -hidden-xsmall">
+          <ul class="nav-sidebar">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div>
+        <div class="column-10 column-small-9 column-offset-2 column-offset-small-3 main">
+          <h1>Dashboard</h1>
+          <div class="row graphics animated">
+            <div class="column-3 column-xsmall-12 column-small-6 gutter-bottom-small gutter-bottom-xsmall">
+              <div>
+                <img src="https://placeholdit.imgix.net/~text?txt=150%C3%97150&w=150&h=150">
+                <h4>Graphic 1</h4>
+              </div>
+            </div>
+            <div class="column-3 column-xsmall-12 column-small-6 gutter-bottom-small gutter-bottom-xsmall">
+              <div>
+                <img src="https://placeholdit.imgix.net/~text?txt=150%C3%97150&w=150&h=150">
+                <h4>Graphic 2</h4>
+              </div>
+            </div>
+            <div class="column-3 column-xsmall-12 column-small-6 gutter-bottom-xsmall">
+              <div>
+                <img src="https://placeholdit.imgix.net/~text?txt=150%C3%97150&w=150&h=150">
+                <h4>Graphic 3</h4>
+              </div>
+            </div>
+            <div class="column-3 column-xsmall-12 column-small-6">
+              <div>
+                <img src="https://placeholdit.imgix.net/~text?txt=150%C3%97150&w=150&h=150">
+                <h4>Graphic 4</h4>
+              </div>
+            </div>
+          </div>
+
+          <h2>Section title</h2>
+          <div class="table-responsive">
+            <table class="utility-classes" width="100%">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+                <tr>
+                  <td>1,002</td>
+                  <td>amet</td>
+                  <td>consectetur</td>
+                  <td>adipiscing</td>
+                  <td>elit</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>Integer</td>
+                  <td>nec</td>
+                  <td>odio</td>
+                  <td>Praesent</td>
+                </tr>
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+                <tr>
+                  <td>1,008</td>
+                  <td>Fusce</td>
+                  <td>nec</td>
+                  <td>tellus</td>
+                  <td>sed</td>
+                </tr>
+                <tr>
+                  <td>1,009</td>
+                  <td>augue</td>
+                  <td>semper</td>
+                  <td>porta</td>
+                  <td>Mauris</td>
+                </tr>
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </main>
+
+  </body>
+</html>
