@@ -33,8 +33,17 @@ Still not convinced? Check out the next comparison table ↓
 
 ## Use
 
+TODO
+
 ## Demos
+
+- [Grid: 12 columns](http://i2btech.github.io/MutaGrid/grid-12.html)
+- [Grid: 12 columns - IE8](http://i2btech.github.io/MutaGrid/grid-ie8-12.html)
+- [Grid: 5 columns](http://i2btech.github.io/MutaGrid/grid-5.html)
+- [Template: Blog](http://i2btech.github.io/MutaGrid/template-blog.html)
+- [Template: Dashboard](http://i2btech.github.io/MutaGrid/template-dashboard.html)
+- [Template: Simple Landing Page](http://i2btech.github.io/MutaGrid/template-landing.html)
 
 ### Collaboration
 
-
+TODO
