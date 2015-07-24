@@ -2,101 +2,107 @@
  * Column Pull Classes
  */
 
-@for $i from 1 through $grid-columns {
-  .column-pull-#{$i} {
-		right: columnWidth($i);
-	}
-}
-
-/*
- * Column Pull Extra Large Classes
- */
-
-@media #{$xlarge} {
-
-	// Column Pull Reset
-	.column-pull-xlarge-reset {
-		right: 0;
-	}
+@if $auxiliar-classes == true {
 
 	@for $i from 1 through $grid-columns {
-	  .column-pull-xlarge-#{$i} {
+	  .column-pull-#{$i} {
 			right: columnWidth($i);
 		}
 	}
 
-}
+	/*
+	 * Column Pull Extra Large Classes
+	 */
 
+	@if map-get($breakpoints, xlarge) != false {
+		@media #{$xlarge} {
 
-/*
- * Column Pull Large Classes
- */
+			// Column Pull Reset
+			.column-pull-xlarge-reset {
+				right: 0;
+			}
 
-@media #{$large} {
+			@for $i from 1 through $grid-columns {
+			  .column-pull-xlarge-#{$i} {
+					right: columnWidth($i);
+				}
+			}
 
-	// Column Pull Reset
-	.column-pull-large-reset {
-		right: 0;
+		}
 	}
 
-	@for $i from 1 through $grid-columns {
-	  .column-pull-large-#{$i} {
-			right: columnWidth($i);
+	/*
+	 * Column Pull Large Classes
+	 */
+
+	@media #{$large} {
+
+		// Column Pull Reset
+		.column-pull-large-reset {
+			right: 0;
+		}
+
+		@for $i from 1 through $grid-columns {
+		  .column-pull-large-#{$i} {
+				right: columnWidth($i);
+			}
+		}
+
+	}
+
+
+	/*
+	 * Column Pull Medium Classes
+	 */
+
+	@media #{$medium} {
+
+		// Column Pull Reset
+		.column-pull-medium-reset {
+			right: 0;
+		}
+		
+		@for $i from 1 through $grid-columns {
+		  .column-pull-medium-#{$i} {
+				right: columnWidth($i);
+			}
+		}
+
+	}
+
+
+	/*
+	 * Column Pull Small Classes
+	 */
+
+	@media #{$small} {
+		
+		@for $i from 1 through $grid-columns {
+		  .column-pull-small-#{$i} {
+				right: columnWidth($i);
+			}
+		}
+
+	}
+
+	/*
+	 * Column Pull Extra Small Classes
+	 */
+
+	@if map-get($breakpoints, xsmall) != false {
+		@media #{$xsmall} {
+
+			[class*='column-pull-'] {
+				right: auto;
+			}
+
+			@for $i from 1 through $grid-columns {
+			  .column-pull-xsmall-#{$i} {
+					right: columnWidth($i);
+				}
+			}
+
 		}
 	}
 
 }
-
-
-/*
- * Column Pull Medium Classes
- */
-
-@media #{$medium} {
-
-	// Column Pull Reset
-	.column-pull-medium-reset {
-		right: 0;
-	}
-	
-	@for $i from 1 through $grid-columns {
-	  .column-pull-medium-#{$i} {
-			right: columnWidth($i);
-		}
-	}
-
-}
-
-
-/*
- * Column Pull Small Classes
- */
-
-@media #{$small} {
-	
-	@for $i from 1 through $grid-columns {
-	  .column-pull-small-#{$i} {
-			right: columnWidth($i);
-		}
-	}
-
-}
-
-/*
- * Column Pull Extra Small Classes
- */
-
-@media #{$xsmall} {
-
-	[class*='column-pull-'] {
-		right: auto;
-	}
-
-	@for $i from 1 through $grid-columns {
-	  .column-pull-xsmall-#{$i} {
-			right: columnWidth($i);
-		}
-	}
-
-}
-

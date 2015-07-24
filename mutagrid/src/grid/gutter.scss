@@ -6,13 +6,14 @@
 
 	@include gutter("");
 
+	@if map-get($breakpoints, xlarge) != false {
+		@media #{$xlarge} {
 
-	@media #{$xlarge} {
+			@include gutter("-xlarge");
 
-		@include gutter("-xlarge");
-
+		}
 	}
-
+	
 	@media #{$large} {
 
 		@include gutter("-large");
@@ -30,11 +31,13 @@
 		@include gutter("-small");
 		
 	}
-
-	@media #{$xsmall} {
-		
-		@include gutter("-xsmall");
-		
+	
+	@if map-get($breakpoints, xsmall) != false {
+		@media #{$xsmall} {
+			
+			@include gutter("-xsmall");
+			
+		}
 	}
 
 }

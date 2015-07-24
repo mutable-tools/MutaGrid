@@ -10,11 +10,11 @@ $gutter: 				1em;
 
 // Breakpoint Sizes
 $breakpoints: (
-	xsmall: 	480px,
+	xsmall: 	480px, 	// values: 480px | false
 	small: 		768px,
 	medium: 	1024px,
 	large: 		1280px,
-	xlarge: 	1680px
+	xlarge: 	1680px 	// values: 1680px | false
 );
 
 // Container Sizes
@@ -27,16 +27,11 @@ $containers: (
 );
 
 // CSS Transition speed
+// value: time(s | ms)
 $transition: 				.3s;
-
-// Include normalize.css by default?
-// (recommended for crossbrowsing support)
-// value: bool - true | false 
-//$normalize: 				false;
 
 // Include auxiliar-classes by default?
 // value: bool - true | false
-// (recommended: true)
 $auxiliar-classes: 	true;
 
 // Include utility-classes by default?
@@ -48,11 +43,6 @@ $utility-classes: 	true;
 // Essential scss files imported and processed.
 // (better don't touch anything below this, or the universe may explode)
 // =================
-
-/* ==
- * Lib: Normalize
- == */
-//@import 'lib/normalize';
 
 /* ==
  * Base Styles

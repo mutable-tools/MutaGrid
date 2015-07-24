@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Grid</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="mutagrid/dist/5/mutagrid.css" />
+<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+
+	<main class="container">
+		<h1>MutaGrid: 5 columns example</h1>
+		<h3>Single Column Example</h3>
+		<div class="row">
+			<div class="column-5">
+				<div class="grid-item">.column-5</div>
+			</div>
+		</div>
+
+		<h3>Column Gutter</h3>
+		<div class="row gutter">
+			<div class="column-5 gutter-right">
+				<div class="grid-item">.gutter-right</div>
+			</div>
+			<div class="column-5 gutter-left">
+				<div class="grid-item">.gutter-left</div>
+			</div>
+			<div class="column-5 no-gutter">
+				<div class="grid-item">.no-gutter</div>
+			</div>
+			<div class="column-5 no-gutter-small no-gutter-xsmall">
+				<div class="grid-item">.no-gutter-small .no-gutter-xsmall</div>
+			</div>
+		</div>
+
+		<h3>Column Offset</h3>
+		<div class="row">
+			<div class="column-2 column-offset-1">
+				<div class="grid-item">.column-2 .column-offset-1</div>
+			</div>
+		</div>
+
+		<h3>Column Center</h3>
+		<div class="row">
+			<div class="column-2 column-center">
+				<div class="grid-item">.column-2 .column-center</div>
+			</div>
+		</div>
+
+		<h3>Column Push</h3>
+		<div class="row">
+			<div class="column-2 column-center column-push-1">
+				<div class="grid-item">.column-2 .column-center .column-push-1</div>
+			</div>
+		</div>
+
+		<h3>Column Pull</h3>
+		<div class="row">
+			<div class="column-2 column-center column-pull-1">
+				<div class="grid-item">.column-2 .column-center .column-pull-1</div>
+			</div>
+		</div>
+
+		<h3>Two Column Example</h3>
+		<div class="row">
+			<div class="column-2">
+				<div class="grid-item">.column-2</div>
+			</div>
+			<div class="column-3">
+				<div class="grid-item">.column-3</div>
+			</div>
+		</div>
+
+		<h3>Nested Columns</h3>
+		<div class="row">
+			<div class="column-5">
+				<div class="grid-item">
+					<div class="row">
+						<div class="column-5">
+							<div class="grid-item">
+								.column-5
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column-3">
+							<div class="grid-item grid-item-nested">.column-3</div>
+						</div>
+						<div class="column-2">
+							<div class="grid-item grid-item-nested">.column-2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>Full Grid</h3>
+		<div>
+			<div class="row">
+				<div class="column-5">
+					<div class="grid-item">5</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-2">
+					<div class="grid-item">2</div>
+				</div>
+			</div>	
+
+			<div class="row">
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-1">
+					<div class="grid-item">1</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h3>Animated Responsive Grid</h3>
+		<div>
+			<div class="row animated">
+				<div class="column-1 column-large-2">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-3 column-large-1">
+					<div class="grid-item">3</div>
+				</div>
+				<div class="column-1 column-large-2">
+					<div class="grid-item">1</div>
+				</div>
+			</div>
+
+			<div class="row animated">
+				<div class="column-2 column-small-1">
+					<div class="grid-item">2</div>
+				</div>
+				<div class="column-1 column-small-3">
+					<div class="grid-item">1</div>
+				</div>
+				<div class="column-2 column-small-1">
+					<div class="grid-item">2</div>
+				</div>
+			</div>
+
+		</div>
+
+		<h3>Responsive Breakpoint Column Example</h3>
+		<p><b>total</b>: 5 columns</p>
+		<p><b>xlarge:</b> 5 columns 1 row | <b>large</b>: 3/2 columns  2 rows | <b>medium</b>: 2/1 columns 3 rows | <b>small</b>: 3/1 columns 3 rows | <b>xsmall</b>: 1 column 5 rows</p>
+		<div class="row">
+			<div class="column-2 column-xlarge-1 column-medium-1 column-small-1">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-1 column-xlarge-1 column-medium-4 column-small-3">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-5 column-small-1">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-2 column-xlarge-1 column-medium-4 column-small-5">
+				<div class="grid-item"></div>
+			</div>
+			<div class="column-3 column-xlarge-1 column-medium-1 column-small-5">
+				<div class="grid-item"></div>
+			</div>
+		</div>
+
+	</main>
+
+</body>
+</html>

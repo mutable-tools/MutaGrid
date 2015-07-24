@@ -22,32 +22,35 @@
 // Utility Classes Mixin
 // used in: utility-classes.scss
 
-$mediaqueries: xsmall small medium large xlarge;
+//$mediaqueries: xsmall small medium large xlarge;
 
 @mixin utils($mediaquery) {
 
-	@each $size in $mediaqueries {
+	@each $sizename, $size in $breakpoints {
+		@if $size != false {
 
-		@if $mediaquery == $size {
+			@if $mediaquery == $sizename {
 
-			.-hidden-#{$size} {
-				display: none;
-			}
-			.-visible-inline-#{$size} {
-				display: inline;
-			}
-			.-visible-inlineblock-#{$size} {
-				display: inline-block;
+				.-hidden-#{$sizename} {
+					display: none!important;
+				}
+				.-visible-inline-#{$sizename} {
+					display: inline!important;
+				}
+				.-visible-inlineblock-#{$sizename} {
+					display: inline-block!important;
+				}
+
+			} @else {
+
+				.-visible-#{$sizename} {
+					display: none!important;
+				}
+
 			}
 
-		} @else {
-
-			.-visible-#{$size} {
-				display: none;
-			}
 
 		}
-
 	}
 
 }
@@ -62,11 +65,11 @@ $mediaqueries: xsmall small medium large xlarge;
 	}
 
 	.gutter-top#{$mediaquery} {
-		padding-top: $gutter!important;
+		margin-top: $gutter!important;
 	}
 	
 	.gutter-bottom#{$mediaquery} {
-		padding-bottom: $gutter!important;
+		margin-bottom: $gutter!important;
 	}
 	
 	.gutter-left#{$mediaquery} {
@@ -84,7 +87,7 @@ $mediaqueries: xsmall small medium large xlarge;
 // Column calc function
 // used in: push.scss, pull.scss, offset.scss, column.scss
 @function columnWidth($i) {
-	@return 100% * ( $i / 12 );
+	@return 100% * ( $i / $grid-columns );
 }
 
 

@@ -33,16 +33,17 @@
  * Column Extra Large Classes
  */
 
-@media #{$xlarge} {
+@if map-get($breakpoints, xlarge) != false {
+	@media #{$xlarge} {
 
-	@for $i from 1 through $grid-columns {
-	  .column-xlarge-#{$i} {
-	  	width: columnWidth($i);
-	  }
+		@for $i from 1 through $grid-columns {
+		  .column-xlarge-#{$i} {
+		  	width: columnWidth($i);
+		  }
+		}
+
 	}
-
 }
-
 
 /*
  * Column Large Classes
@@ -78,6 +79,7 @@
  * Column Small Classes
  */
 
+
 @media #{$small} {
 
 	@for $i from 1 through $grid-columns {
@@ -92,17 +94,19 @@
  * Column Extra Small Classes
  */
 
-@media #{$xsmall} {
-	
-	[class*='column-'] {
-		width: 100%;
-	}
+@if map-get($breakpoints, xsmall) != false {
+	@media #{$xsmall} {
+		
+		[class*='column-'] {
+			width: 100%;
+		}
 
-	@for $i from 1 through $grid-columns {
-	  .column-xsmall-#{$i} {
-	  	width: columnWidth($i);
-	  }
-	}
+		@for $i from 1 through $grid-columns {
+		  .column-xsmall-#{$i} {
+		  	width: columnWidth($i);
+		  }
+		}
 
+	}
 }
 

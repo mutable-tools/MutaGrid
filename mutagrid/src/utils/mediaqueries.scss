@@ -24,10 +24,15 @@ $small-down: "(max-width: #{$screen-small-max})";
 $medium: "(min-width: #{$screen-medium-min}) and (max-width: #{$screen-medium-max})";
 $medium-up: "(min-width: #{$screen-medium-min})";
 $medium-down: "(max-width: #{$screen-medium-max})";
-$large: "(min-width: #{$screen-large-min}) and (max-width: #{$screen-large-max})";
+$large: null;
+@if map-get($breakpoints, xlarge) != false {
+	$large: "(min-width: #{$screen-large-min}) and (max-width: #{$screen-large-max})";
+} @else {
+	$large: "(min-width: #{$screen-large-min})";
+}
 $large-up: "(min-width: #{$screen-large-min})";
 $large-down: "(max-width: #{$screen-large-max})";
-$xlarge: "(min-width: #{map-get($breakpoints, xlarge)})";
+$xlarge: "(min-width: #{$screen-xlarge-min})";
 
 // Retina
 $retina: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)";

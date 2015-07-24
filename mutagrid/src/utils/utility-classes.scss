@@ -20,10 +20,13 @@
 		display: inline-block!important;
 	}
 
-	// xlarge
-	@media #{$xlarge} {
-		@include utils("xlarge");
+	@if map-get($breakpoints, xlarge) != false {
+		// xlarge
+		@media #{$xlarge} {
+			@include utils("xlarge");
+		}
 	}
+
 
 	// large
 	@media #{$large} {
@@ -41,8 +44,10 @@
 	}
 
 	// xsmall
-	@media #{$xsmall} {
-		@include utils("xsmall");
+	@if map-get($breakpoints, xsmall) != false {
+		@media #{$xsmall} {
+			@include utils("xsmall");
+		}
 	}
 
 }
