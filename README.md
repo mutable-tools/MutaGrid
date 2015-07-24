@@ -1,3 +1,5 @@
+![MutaGrid](https://raw.githubusercontent.com/I2BTech/MutaGrid/master/demo/assets/images/mutagrid.gif)
+
 #MutaGrid
 
 Clean, modular, customizable and lightweight *grid-system* you'll ever find.
