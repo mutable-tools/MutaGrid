@@ -2,6 +2,7 @@ body {
 	padding: 3em 0;
 	font-family: 'Roboto', sans-serif;
 	color: #34495E;
+	background: #fff;
 }
 	body:before {
 		content: "";
