@@ -83,7 +83,6 @@ html { -webkit-tap-highlight-color: transparent; }
 
 /* Columns */
 [class*='column-'] { float: left; position: relative; min-height: 1px; padding-left: 0.5em; padding-right: 0.5em; }
-[class*='column-'].column-center { float: none; margin-left: auto; margin-right: auto; }
 
 /* General Column Classes */
 .column-1 { width: 8.33333%; }
@@ -219,6 +218,19 @@ html { -webkit-tap-highlight-color: transparent; }
 .row.animated > div { transition: width 0.3s ease-in-out; }
 
 /* == Auxiliar Classes  == */
+/* Column Center Classes */
+.column-center { float: none; margin-left: auto; margin-right: auto; }
+
+/* Column Center Extra Large Classes */
+@media (min-width: 1680px) { .column-center-xlarge { float: none; margin-left: auto; margin-right: auto; } }
+/* Column Center Large Classes */
+@media (min-width: 1280px) and (max-width: 1679px) { .column-center-large { float: none; margin-left: auto; margin-right: auto; } }
+/* Column Center Medium Classes */
+@media (min-width: 1024px) and (max-width: 1279px) { .column-center-medium { float: none; margin-left: auto; margin-right: auto; } }
+/* Column Center Small Classes */
+@media (min-width: 768px) and (max-width: 1023px) { .column-center-small { float: none; margin-left: auto; margin-right: auto; } }
+/* Column Center Extra Small Classes */
+@media (max-width: 767px) { .column-center-xsmall { float: none; margin-left: auto; margin-right: auto; } }
 /* Column Offset Classes */
 .column-offset-1 { margin-left: 8.33333%; }
 

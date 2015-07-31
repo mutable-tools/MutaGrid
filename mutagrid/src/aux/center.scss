@@ -1,0 +1,89 @@
+/*
+ * Column Center Classes
+ */
+
+@if $auxiliar-classes == true {
+
+	.column-center {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*
+	 * Column Center Extra Large Classes
+	 */
+
+	@if map-get($breakpoints, xlarge) != false {
+		@media #{$xlarge} {
+
+			.column-center-xlarge {
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		}
+	}
+
+	/*
+	 * Column Center Large Classes
+	 */
+
+	@media #{$large} {
+		
+		.column-center-large {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+
+	/*
+	 * Column Center Medium Classes
+	 */
+
+	@media #{$medium} {
+		
+		.column-center-medium {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+
+	/*
+	 * Column Center Small Classes
+	 */
+
+	@media #{$small} {
+
+		.column-center-small {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+	/*
+	 * Column Center Extra Small Classes
+	 */
+
+	@if map-get($breakpoints, xsmall) != false {
+		@media #{$xsmall} {
+			
+			.column-center-xsmall {
+				float: none;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		}
+	}
+
+}

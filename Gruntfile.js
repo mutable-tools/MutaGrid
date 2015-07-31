@@ -25,9 +25,14 @@ module.exports = function(grunt) {
       options: {
         mangle: false
       },
-      target: {
+      init: {
         files: {
           'demo/assets/js/lt-ie-9.min.js': ['bower_components/lt-ie-9/lt-ie-9.js']
+        }
+      },
+      build: {
+        files: {
+          'mutagrid/dist/libs/lt-ie-9.min.js': ['bower_components/lt-ie-9/lt-ie-9.js']
         }
       }
     },
@@ -37,11 +42,16 @@ module.exports = function(grunt) {
         shorthandCompacting: false,
         roundingPrecision: -1
       },
-      target: {
-        files: {
-          'mutagrid/src/lib/normalize.scss': 'bower_components/normalize.css/normalize.css',
-          'mutagrid/dist/mutagrid.min.css': 'mutagrid/dist/mutagrid.css'
-        }
+      init: {
+          files: {
+            'demo/assets/css/normalize.min.css': 'bower_components/normalize.css/normalize.css'
+          }
+      },
+      build: {
+          files: {
+            'mutagrid/dist/libs/normalize.min.css': 'bower_components/normalize.css/normalize.css',
+            'mutagrid/dist/mutagrid.min.css': 'mutagrid/dist/mutagrid.css'
+          }
       }
     },
     usebanner: {
@@ -104,12 +114,13 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["mutagrid/src/*.scss"],
-        tasks: ["newer:sass","newer:autoprefixer","cssmin","usebanner"]
+        tasks: ["newer:sass","newer:autoprefixer"]
       }
     }
   });
 
-  grunt.registerTask("init", ["uglify","cssmin"]);
-  grunt.registerTask("default", ["newer:jade","newer:sass","watch"]);
+  grunt.registerTask("init", ["uglify:init","cssmin:init"]);
+  grunt.registerTask("default", ["newer:jade","newer:sass","cssmin:build","watch"]);
+  grunt.registerTask("compile", ["uglify:build","cssmin:build","jade","sass","cssmin:build","usebanner"]);
 
 };

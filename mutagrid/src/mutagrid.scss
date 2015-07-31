@@ -67,7 +67,8 @@ $utility-classes: 	true;
 /* ==
  * Auxiliar Classes 
  == */
-@import 'aux/offset',
+@import 'aux/center',
+				'aux/offset',
 				'aux/push',
 				'aux/pull';
 
