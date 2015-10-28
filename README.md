@@ -356,13 +356,13 @@ For more examples, see [Demos](#demos) section.
 
 The steps to build your own version of **MutaGrid** are:
 
-**1** Download/clone from GitHub.
+1. Download/clone from GitHub.
 
-**2** Install *NodeJS* dependencies from the console: `$ npm install`
+2. Install *NodeJS* dependencies from the console: `$ npm install`
 
-**3** If you need Normalize.css and/or IE8 support, install the *JavaScript* libraries using: `$ bower install`
+3. If you need Normalize.css and/or IE8 support, install the *JavaScript* libraries using: `$ bower install`
 
-**4** Open mutagrid/src/mutagrid.scss and edit the options to fill your needs:
+4. Open `mutagrid/src/mutagrid.scss` and edit the options to fill your needs:
 
 ```
 // Grid Columns
