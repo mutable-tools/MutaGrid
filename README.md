@@ -1,4 +1,4 @@
-![MutaGrid](https://raw.githubusercontent.com/I2BTech/MutaGrid/master/demo/assets/images/mutagrid.gif)
+![MutaGrid](https://raw.githubusercontent.com/mutable-tools/MutaGrid/master/demo/assets/images/mutagrid.gif)
 
 # MutaGrid
 
@@ -348,7 +348,7 @@ For more examples, see [Demos](#demos) section.
 
 ---
 
-> **MutaGrid** follow [MutableCSS](https://github.com/I2BTech/MutableCSS) and the [standards for frontend development](https://github.com/I2BTech/guia-para-el-codigo-frontend), both build for [I2B Technologies](http://www.i2btech.com/).
+> **MutaGrid** follow [MutableCSS](https://github.com/mutable-tools/MutableCSS) guidelines.
 
 ## Customize
 
@@ -428,12 +428,12 @@ For production-ready files, follow step *5.a*
 
 ## Demos
 
-- [Grid: 12 columns](http://i2btech.github.io/MutaGrid/grid-12.html)
-- [Grid: 5 columns](http://i2btech.github.io/MutaGrid/grid-5.html)
-- [Template: Blog](http://i2btech.github.io/MutaGrid/template-blog.html)
-- [Template: Dashboard](http://i2btech.github.io/MutaGrid/template-dashboard.html)
-- [Template: Simple Landing Page](http://i2btech.github.io/MutaGrid/template-landing.html)
-- [MutaGrid Utility Classes](http://i2btech.github.io/MutaGrid/utility-classes.html)
+- [Grid: 12 columns](http://mutable-tools.github.io/MutaGrid/grid-12.html)
+- [Grid: 5 columns](http://mutable-tools.github.io/MutaGrid/grid-5.html)
+- [Template: Blog](http://mutable-tools.github.io/MutaGrid/template-blog.html)
+- [Template: Dashboard](http://mutable-tools.github.io/MutaGrid/template-dashboard.html)
+- [Template: Simple Landing Page](http://mutable-tools.github.io/MutaGrid/template-landing.html)
+- [MutaGrid Utility Classes](http://mutable-tools.github.io/MutaGrid/utility-classes.html)
 
 ### Collaboration
 
@@ -441,4 +441,4 @@ TODO
 
 ### License
 
-[MIT License](https://raw.githubusercontent.com/I2BTech/MutaGrid/master/LICENSE) © Jorge Epuñan for I2B Technologies 2015
+[MIT License](https://raw.githubusercontent.com/mutable-tools/MutaGrid/master/LICENSE) © Jorge Epuñan 2015
