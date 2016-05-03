@@ -38,7 +38,7 @@ Still not convinced? Check out the next comparison table ↓
 
 ### Breakpoints
 
-**MutaGrid** is a modern grid built for responsive layouts. This feature cannot be removed, only configured (see [Customize](#Customize)). Default viewport breakpoints are:
+**MutaGrid** is a modern grid built for responsive layouts. This feature cannot be removed, only configured (see [Customize](#customize)). Default viewport breakpoints are:
 
 #### xsmall
 - default value: 480px (can be ignored if it is set to *false*)
