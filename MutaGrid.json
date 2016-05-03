@@ -1,7 +1,7 @@
 {
 	"name": "MutaGrid",
 	"title": "MutableCSS Responsive Grid",
-	"homepage": "https://github.com/i2btech/MutaGrid",
+	"homepage": "https://github.com/mutable-tools/MutaGrid",
 	"description": "-",
 	"demo": "-",
 	"keywords": [
@@ -22,9 +22,9 @@
 			"copyright": "©2015"
 		}
 	],
-	"bugs": "https://github.com/i2btech/MutaGrid/issues",
-	"docs": "https://github.com/i2btech/MutaGrid#readme",
-	"download": "https://github.com/i2btech/MutaGrid/archive/master.zip",
+	"bugs": "https://github.com/mutable-tools/MutaGrid/issues",
+	"docs": "https://github.com/mutable-tools/MutaGrid#readme",
+	"download": "https://github.com/mutable-tools/MutaGrid/archive/master.zip",
 	"dependencies": {
 		"normalize.css": "latest"
 	}

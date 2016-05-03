@@ -2,11 +2,11 @@
 
 # MutaGrid
 
-A clean, modular, functional, customizable and lightweight *grid-system* you'll ever find.
+The modular, functional, clean, semantic, customizable & lightweight *grid-system* you'll ever find.
 
 *What? Another one?*
 
-But this one is **really** flexible. With proper configuration you can have a 2.9kb (min) grid-system!
+But this one is **really** flexible. With proper configuration you can have a 2.9kb (min) CSS grid-system!
 
 ## Features
 
@@ -38,7 +38,7 @@ Still not convinced? Check out the next comparison table ↓
 
 ### Breakpoints
 
-**MutaGrid** is a modern grid built for responsive layouts. This feature cannot be removed, only configured (see [Customize](#Customize)). Default viewport breakpoints are:
+**MutaGrid** is a modern grid built for responsive layouts. This feature cannot be removed, only configured (see [Customize](#customize)). Default viewport breakpoints are:
 
 #### xsmall
 - default value: 480px (can be ignored if it is set to *false*)
@@ -196,11 +196,11 @@ As any other grid-system, **MutaGrid** includes *center, pull, push* and *offset
 > 
 > Responsive classes: 
 > ```
-> .gutter-center-xsmall
-> .gutter-center-small
-> .gutter-center-medium
-> .gutter-center-large
-> .gutter-center-xlarge
+> .column-center-xsmall
+> .column-center-small
+> .column-center-medium
+> .column-center-large
+> .column-center-xlarge
 > ```
 
 Centers a column within it's row. That simple.
@@ -221,11 +221,11 @@ Centers a column within it's row. That simple.
 > 
 > Responsive classes: 
 > ```
-> .gutter-offset-xsmall-#
-> .gutter-offset-small-#
-> .gutter-offset-medium-#
-> .gutter-offset-large-#
-> .gutter-offset-xlarge-#
+> .column-offset-xsmall-#
+> .column-offset-small-#
+> .column-offset-medium-#
+> .column-offset-large-#
+> .column-offset-xlarge-#
 > ```
 
 
@@ -245,11 +245,11 @@ Centers a column within it's row. That simple.
 > 
 > Responsive classes: 
 > ```
-> .gutter-push-xsmall-#
-> .gutter-push-small-#
-> .gutter-push-medium-#
-> .gutter-push-large-#
-> .gutter-push-xlarge-#
+> .column-push-xsmall-#
+> .column-push-small-#
+> .column-push-medium-#
+> .column-push-large-#
+> .column-push-xlarge-#
 > ```
 
 
@@ -269,11 +269,11 @@ Centers a column within it's row. That simple.
 > 
 > Responsive classes: 
 > ```
-> .gutter-pull-xsmall-#
-> .gutter-pull-small-#
-> .gutter-pull-medium-#
-> .gutter-pull-large-#
-> .gutter-pull-xlarge-#
+> .column-pull-xsmall-#
+> .column-pull-small-#
+> .column-pull-medium-#
+> .column-pull-large-#
+> .column-pull-xlarge-#
 > ```
 
 
@@ -400,7 +400,7 @@ $utility-classes: 	true;	// value: bool - true | false
 ```
 **5.a** Compile-it: `$ grunt compile`
 
-Your files will reside in: 
+Your files will be created in: 
 ```
 dist/mutagrid/mutagrid.css
 dist/mutagrid/mutagrid.min.css
@@ -433,6 +433,7 @@ For production-ready files, follow step *5.a*
 - [Template: Blog](http://mutable-tools.github.io/MutaGrid/template-blog.html)
 - [Template: Dashboard](http://mutable-tools.github.io/MutaGrid/template-dashboard.html)
 - [Template: Simple Landing Page](http://mutable-tools.github.io/MutaGrid/template-landing.html)
+- [Template: One Page Landing](http://mutable-tools.github.io/MutaGrid/template-onepagelanding.html)
 - [MutaGrid Utility Classes](http://mutable-tools.github.io/MutaGrid/utility-classes.html)
 
 ### Collaboration
