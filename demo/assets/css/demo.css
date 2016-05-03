@@ -2,7 +2,6 @@ body {
 	padding: 3em 0;
 	font-family: 'Roboto', sans-serif;
 	color: #34495E;
-	background: #fff;
 }
 	body:before {
 		content: "";
@@ -106,4 +105,32 @@ h3 {
 	.utility-classes .grid-item[class*="-hidden-"] {
 		background: #E74C3C;
 	}
-	
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ribbon {
+  display: block;
+  font: bold 12px Sans-Serif;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -15px;
+  top: 15px;
+  width: 140px;
+  background-color: #1e3f9f;
+  background: linear-gradient(135deg, #1e3f9f,  #ff2247);
+  background-position: center;
+  background-size: 170%;
+  text-decoration: none;
+  color: #fff;
+}
