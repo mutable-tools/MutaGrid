@@ -20,7 +20,7 @@ But this one is **really** flexible. With proper configuration you can have a 2.
 
 Still not convinced? Check out the next comparison table ↓
 
-|  | MutaGrid | Bootstrap 3 | Foundation 5 |
+| --- | MutaGrid | Bootstrap 3 | Foundation 5 |
 | ---: | :---: | :---: | :---: | :---: |
 | Size | 15.5kb ✔ | 15.9kb | 20.5kb |
 | Dependency | none ✔ | Normalize.css (+3kb) | Normalize.css (+3kb) |
