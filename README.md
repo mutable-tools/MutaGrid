@@ -307,7 +307,7 @@ Centers a column within it's row. That simple.
 > ```
 > 
 > Responsive classes (xsmall | small | medium | large | xlarge)
-> ```css
+> ```
 > .-hidden-*
 > .-invisible-*
 > .-visible-*
