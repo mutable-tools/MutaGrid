@@ -73,7 +73,7 @@ A container will adopt the width defined for each breakpoint:
 ```
 $containers: (
   xsmall:   100%,     // full width of screen
-  small:    100%,   // full width of screen
+  small:    100%,     // full width of screen
   medium:   1024px,   // same as breakpoint
   large:    1280px,   // same as breakpoint
   xlarge:   1680px    // same as breakpoint
@@ -124,16 +124,16 @@ As example, the default *12 columns grid* generates the following CSS classes:
 ```
 .column-1   { width: 8.33333%;  }
 .column-2   { width: 16.66667%; }
-.column-3   { width: 25%;     }
+.column-3   { width: 25%;       }
 .column-4   { width: 33.33333%; }
 .column-5   { width: 41.66667%; }
-.column-6   { width: 50%;     }
+.column-6   { width: 50%;       }
 .column-7   { width: 58.33333%; }
 .column-8   { width: 66.66667%; }
-.column-9   { width: 75%;     }
+.column-9   { width: 75%;       }
 .column-10  { width: 83.33333%; }
 .column-11  { width: 91.66667%; }
-.column-12  { width: 100%;    }
+.column-12  { width: 100%;      }
 ``` 
 
 The same classes for a *5 columns grid*:
@@ -177,11 +177,11 @@ If you set `$gutter: 0;` columns will not have space between.
 Extra-classes were added if you need to manually add gutter between elements:
 
 ```
-.gutter-top   { margin-top: 1em !important; }
-.gutter-right   { padding-right:1em!important;  }
-.gutter-bottom  { margin-bottom:1em!important;  }
-.gutter-left  { padding-left:1em!important; }
-.no-gutter    { padding-left:0!important; padding-right:0!important; }
+.gutter-top     { margin-top: 1em!important; }
+.gutter-right   { padding-right: 1em!important; }
+.gutter-bottom  { margin-bottom: 1em!important; }
+.gutter-left    { padding-left: 1em!important; }
+.no-gutter      { padding-left:0!important; padding-right:0!important; }
 ```
 
 
@@ -205,7 +205,7 @@ As any other grid-system, **MutaGrid** includes *center, pull, push* and *offset
 Centers a column within it's row. That simple.
 
 ```
-.column-center { float:none; margin-left:auto; margin-right:auto; }
+.column-center { float: none; margin-left: auto; margin-right: auto; }
 
 <div class="row">
   <div class="column-4 column-center"></div>
@@ -311,11 +311,11 @@ Centers a column within it's row. That simple.
 Utility classes are useful when you need to handle visibility states for certain element at certain breakpoint.
 
 ```
-.-hidden        { display: none!important; }
-.-invisible       { visibility: hidden; }
-.-visible         { display: block!important; }
-.-visible-inline    { display: inline!important; }
-.-visible-inlineblock   { display: inline-block!important; }
+.-hidden              { display: none!important; }
+.-invisible           { visibility: hidden; }
+.-visible             { display: block!important; }
+.-visible-inline      { display: inline!important; }
+.-visible-inlineblock { display: inline-block!important; }
 ```
 
 
@@ -365,24 +365,24 @@ The steps to build your own version of **MutaGrid** are:
 
 ```
 // Grid Columns
-$grid-columns:  12;
+$grid-columns: 12;
 
 // Gutter Size
 $gutter:    1em;
 
 // Breakpoint Sizes
 $breakpoints: (
-  xsmall:   480px,  // values: 480px | false
+  xsmall:   480px,    // values: 480px | false
   small:    768px,
   medium:   1024px,
   large:    1280px,
-  xlarge:   1680px  // values: 1680px | false
+  xlarge:   1680px    // values: 1680px | false
 );
 
 // Container Sizes (when a breakpoint is reached)
 $containers: (
   xsmall:   100%,     // full width of screen
-  small:    100%,   // full width of screen
+  small:    100%,     // full width of screen
   medium:   1024px,   // same as breakpoint
   large:    1280px,   // same as breakpoint
   xlarge:   1680px    // same as breakpoint
@@ -392,10 +392,10 @@ $containers: (
 $transition:    .3s;  // value: time(s | ms)
 
 // Include auxiliar-classes by default?
-$auxiliar-classes:  true; // value: bool - true | false
+$auxiliar-classes:  true; // value: bool
 
 // Include utility-classes by default?
-$utility-classes:   true; // value: bool - true | false
+$utility-classes:   true; // value: bool
 ```
 **5.a** Compile-it: `$ grunt compile`
 
