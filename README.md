@@ -6,7 +6,7 @@ The modular, functional, clean, semantic, customizable & lightweight *grid-syste
 
 *What? Another one?*
 
-But this one is **really** flexible. With proper configuration you can have a 2.9kb (min) CSS grid-system!
+But this one is **really** flexible. With proper configuration you can have a 2.9kb (min) fully-compatible *CSS grid-system*!
 
 ## Features
 
@@ -20,14 +20,13 @@ But this one is **really** flexible. With proper configuration you can have a 2.
 
 Still not convinced? Check out the next comparison table ↓
 
-|  | MutaGrid | Bootstrap 3 | Foundation 5 |
-|--------------|------------|----------|------------|----------------------|
-| Size | 15.5kb ✔ | 15.9kb | 20.5kb |
-| Dependency | none ✔ | Normalize.css (+3kb) | Normalize.css (+3kb) |
-| Responsive | sure! | yes | yes |
-| Breakpoints | 5 | 5 | 5 |
-| Support | IE8+ | IE8+ | IE9+ |
-| Pre-processor | SCSS | Less | SCSS |
+|                   | MutaGrid | Bootstrap 3 | Foundation 5 |
+|------------------:|:--------:|:-----------:|:------------:|
+|          **Size** | 15.5kb ✔ |    15.9kb   |    20.5kb    |
+|    **Responsive** |   sure!  |     yes     |      yes     |
+|   **Breakpoints** |     5    |      5      |       5      |
+|       **Support** |   IE8+   |     IE8+    |     IE9+     |
+| **Pre-processor** |   SCSS   |     Less    |     SCSS     |
 
 
 **MutaGrid** is a *CSS grid-system* that uses classes to fit your needs of a rock-solid structure. It's not far from other main competitors like *Bootstrap* and/or *Foundation*, but **MutaGrid** was built from the ground up to support a flexible grid based in rows/columns and the exact utility classes needed. With that in mind, MutaGrid's size (minified) can be from 2.6kb (just the grid) up to 21.3kb (with full classes).
@@ -71,13 +70,13 @@ For many **MutaGrid** components (columns, utility, auxiliar and classes) CSS cl
 
 A container will adopt the width defined for each breakpoint:
 
-```
+```scss
 $containers: (
-	xsmall: 	100%, 		// full width of screen
-	small: 		100%,		// full width of screen
-	medium: 	1024px,		// same as breakpoint
-	large: 		1280px,		// same as breakpoint
-	xlarge: 	1680px		// same as breakpoint
+  xsmall:   100%,     // full width of screen
+  small:    100%,     // full width of screen
+  medium:   1024px,   // same as breakpoint
+  large:    1280px,   // same as breakpoint
+  xlarge:   1680px    // same as breakpoint
 );
 ```
 
@@ -102,7 +101,7 @@ A row hold and wrap one or more columns and represent the vertical part of the s
 > CSS class: `.column-#`
 > 
 > Responsive classes: 
-> ```
+> ```html
 > .column-xsmall-#
 > .column-small-#
 > .column-medium-#
@@ -112,7 +111,7 @@ A row hold and wrap one or more columns and represent the vertical part of the s
 
 Columns are the hearth of **MutaGrid** and define the horizontal sections of a layout. They depend directly of the total columns defined in `mutagrid.scss` (*default: 12 columns*):
 
-```
+```scss
 $grid-columns: 12;
 ```
 
@@ -122,24 +121,24 @@ When `mutagrid.scss` is compiled, CSS class names are created for each `.column-
 
 As example, the default *12 columns grid* generates the following CSS classes:
 
-```
-.column-1 	{ width: 8.33333%; 	}
-.column-2 	{ width: 16.66667%; }
-.column-3 	{ width: 25%; 		}
-.column-4 	{ width: 33.33333%; }
-.column-5 	{ width: 41.66667%; }
-.column-6 	{ width: 50%; 		}
-.column-7 	{ width: 58.33333%; }
-.column-8 	{ width: 66.66667%; }
-.column-9 	{ width: 75%; 		}
-.column-10 	{ width: 83.33333%; }
-.column-11 	{ width: 91.66667%; }
-.column-12 	{ width: 100%; 		}
+```css
+.column-1   { width: 8.33333%;  }
+.column-2   { width: 16.66667%; }
+.column-3   { width: 25%;       }
+.column-4   { width: 33.33333%; }
+.column-5   { width: 41.66667%; }
+.column-6   { width: 50%;       }
+.column-7   { width: 58.33333%; }
+.column-8   { width: 66.66667%; }
+.column-9   { width: 75%;       }
+.column-10  { width: 83.33333%; }
+.column-11  { width: 91.66667%; }
+.column-12  { width: 100%;      }
 ``` 
 
 The same classes for a *5 columns grid*:
 
-```
+```css
 .column-1 { width: 20%;  }
 .column-2 { width: 40%;  }
 .column-3 { width: 60%;  }
@@ -154,7 +153,7 @@ The same classes for a *5 columns grid*:
 > CSS class: `.gutter-*` (top | left | bottom | right)
 > 
 > Responsive classes: 
-> ```
+> ```html
 > .gutter-*-xsmall
 > .gutter-*-small
 > .gutter-*-medium
@@ -164,7 +163,7 @@ The same classes for a *5 columns grid*:
 
 The *gutter* is the space between columns and by default it's value is 1em:
 
-```
+```scss
 // Gutter Size
 $gutter: 1em;
 ```
@@ -177,12 +176,12 @@ If you set `$gutter: 0;` columns will not have space between.
 
 Extra-classes were added if you need to manually add gutter between elements:
 
-```
-.gutter-top 	{ margin-top: 1em !important;	}
-.gutter-right 	{ padding-right:1em!important;  }
-.gutter-bottom 	{ margin-bottom:1em!important;  }
-.gutter-left 	{ padding-left:1em!important;	}
-.no-gutter 		{ padding-left:0!important; padding-right:0!important; }
+```css
+.gutter-top     { margin-top: 1em!important; }
+.gutter-right   { padding-right: 1em!important; }
+.gutter-bottom  { margin-bottom: 1em!important; }
+.gutter-left    { padding-left: 1em!important; }
+.no-gutter      { padding-left:0!important; padding-right:0!important; }
 ```
 
 
@@ -195,7 +194,7 @@ As any other grid-system, **MutaGrid** includes *center, pull, push* and *offset
 > CSS class: `.column-center`
 > 
 > Responsive classes: 
-> ```
+> ```html
 > .column-center-xsmall
 > .column-center-small
 > .column-center-medium
@@ -205,11 +204,13 @@ As any other grid-system, **MutaGrid** includes *center, pull, push* and *offset
 
 Centers a column within it's row. That simple.
 
+```css
+.column-center { float: none; margin-left: auto; margin-right: auto; }
 ```
-.column-center { float:none; margin-left:auto; margin-right:auto; }
 
+```html
 <div class="row">
-	<div class="column-4 column-center"></div>
+  <div class="column-4 column-center"></div>
 </div>
 ```
 
@@ -220,7 +221,7 @@ Centers a column within it's row. That simple.
 > CSS class: `.column-offset-#`
 > 
 > Responsive classes: 
-> ```
+> ```css
 > .column-offset-xsmall-#
 > .column-offset-small-#
 > .column-offset-medium-#
@@ -229,11 +230,13 @@ Centers a column within it's row. That simple.
 > ```
 
 
-```
+```css
 .column-offset-# { margin-left: #; }
+```
 
+```html
 <div class="row">
-	<div class="column-4 column-offset-2"></div>
+  <div class="column-4 column-offset-2"></div>
 </div>
 ```
 
@@ -244,7 +247,7 @@ Centers a column within it's row. That simple.
 > CSS class: `.column-push-#`
 > 
 > Responsive classes: 
-> ```
+> ```css
 > .column-push-xsmall-#
 > .column-push-small-#
 > .column-push-medium-#
@@ -253,11 +256,13 @@ Centers a column within it's row. That simple.
 > ```
 
 
-```
+```css
 .column-push-# { left: #; }
+```
 
+```html
 <div class="row">
-	<div class="column-4 column-push-1"></div>
+  <div class="column-4 column-push-1"></div>
 </div>
 ```
 
@@ -268,7 +273,7 @@ Centers a column within it's row. That simple.
 > CSS class: `.column-pull-#`
 > 
 > Responsive classes: 
-> ```
+> ```css
 > .column-pull-xsmall-#
 > .column-pull-small-#
 > .column-pull-medium-#
@@ -277,11 +282,13 @@ Centers a column within it's row. That simple.
 > ```
 
 
-```
+```css
 .column-pull-# { right: #; }
+```
 
+```html
 <div class="row">
-	<div class="column-4 column-pull-1"></div>
+  <div class="column-4 column-pull-1"></div>
 </div>
 ```
 
@@ -291,7 +298,7 @@ Centers a column within it's row. That simple.
 ### Utility Classes
 
 > CSS classes:
-> ```
+> ```css
 > .-hidden
 > .-invisible
 > .-visible
@@ -311,12 +318,12 @@ Centers a column within it's row. That simple.
 
 Utility classes are useful when you need to handle visibility states for certain element at certain breakpoint.
 
-```
-.-hidden 				{ display: none!important; }
-.-invisible 			{ visibility: hidden; }
-.-visible 				{ display: block!important; }
-.-visible-inline 		{ display: inline!important; }
-.-visible-inlineblock 	{ display: inline-block!important; }
+```css
+.-hidden              { display: none!important; }
+.-invisible           { visibility: hidden; }
+.-visible             { display: block!important; }
+.-visible-inline      { display: inline!important; }
+.-visible-inlineblock { display: inline-block!important; }
 ```
 
 
@@ -332,15 +339,15 @@ Lets take the following image as example and create 2 rows: one with 3 columns a
 
 As the total sum of columns must be 12, the first row will have 3 columns with `.column-4` each and the second row one column will be `.column-8` an the other one `column-4`:
 
-```
+```html
 <div class="row">
-	<div class="column-4">.column-4</div>
-	<div class="column-4">.column-4</div>
-	<div class="column-4">.column-4</div>
+  <div class="column-4">.column-4</div>
+  <div class="column-4">.column-4</div>
+  <div class="column-4">.column-4</div>
 </div>
 <div class="row">
-	<div class="column-8">.column-8</div>
-	<div class="column-4">.column-4</div>
+  <div class="column-8">.column-8</div>
+  <div class="column-4">.column-4</div>
 </div>
 ```
 
@@ -364,39 +371,39 @@ The steps to build your own version of **MutaGrid** are:
 
 4. Open `mutagrid/src/mutagrid.scss` and edit the options to fill your needs:
 
-```
+```scss
 // Grid Columns
-$grid-columns:	12;
+$grid-columns: 12;
 
 // Gutter Size
-$gutter:		1em;
+$gutter:    1em;
 
 // Breakpoint Sizes
 $breakpoints: (
-	xsmall:		480px, 	// values: 480px | false
-	small:		768px,
-	medium:		1024px,
-	large:		1280px,
-	xlarge:		1680px 	// values: 1680px | false
+  xsmall:   480px,    // values: 480px | false
+  small:    768px,
+  medium:   1024px,
+  large:    1280px,
+  xlarge:   1680px    // values: 1680px | false
 );
 
 // Container Sizes (when a breakpoint is reached)
 $containers: (
-	xsmall: 	100%, 		// full width of screen
-	small: 		100%,		// full width of screen
-	medium: 	1024px,		// same as breakpoint
-	large: 		1280px,		// same as breakpoint
-	xlarge: 	1680px		// same as breakpoint
+  xsmall:   100%,     // full width of screen
+  small:    100%,     // full width of screen
+  medium:   1024px,   // same as breakpoint
+  large:    1280px,   // same as breakpoint
+  xlarge:   1680px    // same as breakpoint
 );
 
 // CSS Transition speed (if animated grid is used)
-$transition: 		.3s;	// value: time(s | ms)
+$transition:    .3s;  // value: time(s | ms)
 
 // Include auxiliar-classes by default?
-$auxiliar-classes: 	true;	// value: bool - true | false
+$auxiliar-classes:  true; // value: bool
 
 // Include utility-classes by default?
-$utility-classes: 	true;	// value: bool - true | false
+$utility-classes:   true; // value: bool
 ```
 **5.a** Compile-it: `$ grunt compile`
 
