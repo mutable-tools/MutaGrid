@@ -20,14 +20,13 @@ But this one is **really** flexible. With proper configuration you can have a 2.
 
 Still not convinced? Check out the next comparison table ↓
 
-| --- | MutaGrid | Bootstrap 3 | Foundation 5 |
-| ---: | :---: | :---: | :---: | :---: |
-| Size | 15.5kb ✔ | 15.9kb | 20.5kb |
-| Dependency | none ✔ | Normalize.css (+3kb) | Normalize.css (+3kb) |
-| Responsive | sure! | yes | yes |
-| Breakpoints | 5 | 5 | 5 |
-| Support | IE8+ | IE8+ | IE9+ |
-| Pre-processor | SCSS | Less | SCSS |
+|               | MutaGrid | Bootstrap 3 | Foundation 5 |
+|---------------|----------|-------------|--------------|
+|          Size | 15.5kb ✔ |    15.9kb   |    20.5kb    |
+|    Responsive |   sure!  |     yes     |      yes     |
+|   Breakpoints |     5    |      5      |       5      |
+|       Support |   IE8+   |     IE8+    |     IE9+     |
+| Pre-processor |   SCSS   |     Less    |     SCSS     |
 
 
 **MutaGrid** is a *CSS grid-system* that uses classes to fit your needs of a rock-solid structure. It's not far from other main competitors like *Bootstrap* and/or *Foundation*, but **MutaGrid** was built from the ground up to support a flexible grid based in rows/columns and the exact utility classes needed. With that in mind, MutaGrid's size (minified) can be from 2.6kb (just the grid) up to 21.3kb (with full classes).
