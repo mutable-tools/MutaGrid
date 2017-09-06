@@ -327,7 +327,7 @@ Utility classes are useful when you need to handle visibility states for certain
 ```
 
 
-##Use
+## Use
 
 Include **MutaGrid** to your project and start building your HTML structure. The formula is simple: 
 
